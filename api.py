@@ -21,8 +21,8 @@ def send_whatsapp():
     print(response.text)
     print(response.status_code)
     if response.status_code == 200:
-        return {'status': 'message sent'}, 200
+        return "true"
     else:
-        return {'status': 'message failed'}, 400
+        return "false"
 if __name__ == '__main__':
     app.run(debug=True)
