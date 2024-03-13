@@ -3,7 +3,7 @@ import requests
 
 app = Flask(__name__)
 
-@app.route('/send-whatsapp', methods=['POST'])
+@app.route('/send-whatsapp', methods=['GET'])
 def send_whatsapp():
     customer_number = request.json.get('number')
     
